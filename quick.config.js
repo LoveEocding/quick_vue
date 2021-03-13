@@ -6,7 +6,7 @@ module.exports = {
       publicPath: process.env.PUBLIC_PATH || '',
     },
     vetur: {
-      tagPrefix: 'quickact_',
+      tagPrefix: 'quick_',
     },
   },
   site: {
@@ -24,39 +24,29 @@ module.exports = {
         'docsearch:version': '2.x',
       },
       options: {
-        logo: 'https://habaocdn.fuhuibao.club/flb/common/1609203914529quickact_vue.png'
-      }
+        logo:
+          'https://habaocdn.fuhuibao.club/flb/common/1609203914529quickact_vue.png',
+      },
     },
     locales: {
       'zh-CN': {
         title: 'QuickAct_Vue',
         description: '活动 Vue 组件库',
-        logo: 'https://habaocdn.fuhuibao.club/flb/common/1609203914529quickact_vue.png',
+        logo:
+          'https://habaocdn.fuhuibao.club/flb/common/1609203914529quickact_vue.png',
         langLabel: '中文',
-        links: [{
-          logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-          url: 'https://github.com/LoveEocding/QuickAct_Vue',
-        }, ],
-        searchConfig: {
-          apiKey: '90067aecdaa2c85220e2783cd305caac',
-          indexName: 'vant',
-          placeholder: '搜索文档...',
-          transformData(hits) {
-            if (location.hostname === 'vant-contrib.gitee.io') {
-              hits.forEach((hit) => {
-                if (hit.url) {
-                  hit.url = hit.url.replace(
-                    'youzan.github.io',
-                    'vant-contrib.gitee.io'
-                  );
-                }
-              });
-            }
+        links: [
+          {
+            logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
+            url: 'https://github.com/LoveEocding/QuickAct_Vue',
           },
-        },
-        nav: [{
+        ],
+        searchConfig: null,
+        nav: [
+          {
             title: '开发指南',
-            items: [{
+            items: [
+              {
                 path: 'home',
                 title: '介绍',
               },
@@ -76,7 +66,8 @@ module.exports = {
           },
           {
             title: '活动组件',
-            items: [{
+            items: [
+              {
                 path: 'wheel',
                 title: '大转盘',
               },
@@ -92,7 +83,8 @@ module.exports = {
           },
           {
             title: '交互组件',
-            items: [{
+            items: [
+              {
                 path: 'button',
                 title: '上下翻页',
               },
@@ -102,28 +94,31 @@ module.exports = {
               },
             ],
           },
-
-
         ],
       },
       'en-US': {
         title: 'quickact_vue',
         description: 'Mobile UI Components built on Vue',
-        logo: 'https://habaocdn.fuhuibao.club/flb/common/1609203914529quickact_vue.png"',
+        logo:
+          'https://habaocdn.fuhuibao.club/flb/common/1609203914529quickact_vue.png"',
         langLabel: 'En',
-        links: [{
-          logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-          url: 'https://github.com/LoveEocding/QuickAct_Vue',
-        }, ],
+        links: [
+          {
+            logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
+            url: 'https://github.com/LoveEocding/QuickAct_Vue',
+          },
+        ],
         searchConfig: {
           apiKey: '90067aecdaa2c85220e2783cd305caac',
           indexName: 'vant',
           placeholder: 'Search...',
         },
-        nav: [{
-          title: 'Essentials',
-          items: []
-        }],
+        nav: [
+          {
+            title: 'Essentials',
+            items: [],
+          },
+        ],
       },
     },
   },

@@ -1,5 +1,5 @@
 {
-  "name": "vant",
+  "name": "quick_vue",
   "version": "1.0.0",
   "description": "Mobile UI Components built on Vue",
   "main": "lib/index.js",
@@ -17,19 +17,19 @@
   },
   "scripts": {
     "bootstrap": "yarn || npm i",
-    "dev": "vant-cli dev",
-    "lint": "vant-cli lint",
-    "test": "vant-cli test",
-    "build": "vant-cli build",
-    "release": "vant-cli release",
-    "build-site":"vant-cli build-site",
-    "test:watch": "vant-cli test --watch",
+    "dev": "quick-cli dev",
+    "lint": "quick-cli lint",
+    "test": "quick-cli test",
+    "build": "quick-cli build",
+    "release": "quick-cli release",
+    "build-site": "quick-cli build-site",
+    "test:watch": "quick-cli test --watch",
     "test:coverage": "open test/coverage/index.html"
   },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "commit-msg": "vant-cli commit-lint"
+      "commit-msg": "quick-cli commit-lint"
     }
   },
   "lint-staged": {
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:youzan/vant.git"
+    "url": "https://github.com/LoveEocding/quick_vue"
   },
   "keywords": [
     "ui",
@@ -62,8 +62,9 @@
   "peerDependencies": {
     "vue": ">= 2.5.22"
   },
+  "contributors": ["nieyao"],
   "devDependencies": {
-    "@vant/cli": "^2.7.0",
+    "@quick_vue/cli": "^1.0.1",
     "prettier": "2.1.0",
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12"
@@ -82,7 +83,7 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@vant"
+      "@vant/eslint-config"
     ]
   },
   "stylelint": {
