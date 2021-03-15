@@ -5,7 +5,12 @@
 </template>
 
 <script>
+import QuickWheel from '../index.vue';
+
 export default {
+  components: {
+    QuickWheel,
+  },
   i18n: {
     'zh-CN': {
       nextStep: '下一步',

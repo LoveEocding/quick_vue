@@ -6,7 +6,6 @@
 
 <p align="center">Quick Vue 是由**娃哈哈前端团队**开发维护，旨在快速开发日常交互活动</p>
 
-
 <p align="center">
   🔥 <a href="">文档网站</a>
 </p>
@@ -30,10 +29,10 @@ Vue.use(Tigger);
 
 See more in [Quickstart]().
 
-
 ## Browser Support
 
 Modern browsers and Android 4.0+, iOS 8.0+.
 
+## 持续开发
 
-
+建议使用 plop 命令生成一个组件目录结构。

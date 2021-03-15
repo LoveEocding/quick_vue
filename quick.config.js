@@ -65,6 +65,23 @@ module.exports = {
             ],
           },
           {
+            title: '图表',
+            items: [
+              {
+                path: 'bar-chart',
+                title: '柱状图',
+              },
+              {
+                path: 'wheel',
+                title: '环形进度',
+              },
+              {
+                path: 'wheel',
+                title: '环形构成',
+              },
+            ],
+          },
+          {
             title: '活动组件',
             items: [
               {
@@ -72,11 +89,11 @@ module.exports = {
                 title: '大转盘',
               },
               {
-                path: 'cell',
+                path: 'wheel',
                 title: '老虎机',
               },
               {
-                path: 'icon',
+                path: 'wheel',
                 title: '弹幕滚动',
               },
             ],
@@ -85,11 +102,11 @@ module.exports = {
             title: '交互组件',
             items: [
               {
-                path: 'button',
+                path: 'wheel',
                 title: '上下翻页',
               },
               {
-                path: 'cell',
+                path: 'wheel',
                 title: '左右翻页',
               },
             ],
