@@ -72,12 +72,12 @@ module.exports = {
                 title: '柱状图',
               },
               {
-                path: 'wheel',
-                title: '环形进度',
+                path: 'circle-chart',
+                title: '环形进度图',
               },
               {
                 path: 'wheel',
-                title: '环形构成',
+                title: '环形构成图',
               },
             ],
           },

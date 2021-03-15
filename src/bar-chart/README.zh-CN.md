@@ -8,7 +8,7 @@
 
 ```js
 import Vue from 'vue';
-import { BarChart } from 'vant';
+import { BarChart } from 'quick_vue';
 
 Vue.use(BarChart);
 ```
