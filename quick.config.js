@@ -10,7 +10,6 @@ module.exports = {
     },
   },
   site: {
-    title: 'Quick_cli',
     defaultLang: 'zh-CN',
     // versions: [{
     //   label: '1.0',
@@ -114,6 +113,7 @@ module.exports = {
           },
         ],
       },
+      'en-US': {},
     },
   },
 };
