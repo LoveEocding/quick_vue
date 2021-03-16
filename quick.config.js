@@ -10,7 +10,8 @@ module.exports = {
     },
   },
   site: {
-    defaultLang: 'en-US',
+    title: 'Quick_cli',
+    defaultLang: 'zh-CN',
     // versions: [{
     //   label: '1.0',
     //   link: '/vant/1.x/'

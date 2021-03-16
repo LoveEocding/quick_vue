@@ -2,6 +2,7 @@
   <div class="test">
     <quick-circle-assemble-chart
       :list="list"
+      :size="size"
       @path_click="pathClick"
     ></quick-circle-assemble-chart>
   </div>
@@ -16,6 +17,7 @@ export default {
   },
   data() {
     return {
+      size: [200, 200],
       list: [
         {
           name: '进度一',
