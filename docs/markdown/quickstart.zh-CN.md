@@ -2,85 +2,19 @@
 
 ### 介绍
 
-通过本章节你可以了解到 Vant 的安装方法和基本使用姿势。
+通过本章节你可以了解到 quick_vue 的安装方法和基本使用姿势。
 
 ## 安装
 
 ### 通过 npm 安装
 
-在现有项目中使用 Vant 时，可以通过 `npm` 或 `yarn` 进行安装：
+在现有项目中使用 quick_vue 时，可以通过 `npm` 或 `yarn` 进行安装：
 
 ```bash
 # Vue 2 项目，安装 Vant 2.x 版本：
-npm i vant -S
+npm i quick_vue -S
 
-# Vue 3 项目，安装 Vant 3.x 版本：
-npm i vant@next -S
 ```
-
-### 通过 CDN 安装
-
-使用 Vant 最简单的方法是直接在 html 文件中引入 CDN 链接，之后你可以通过全局变量 `vant` 访问到所有组件。
-
-```html
-<!-- 引入样式文件 -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/vant@2.12/lib/index.css"
-/>
-
-<!-- 引入 Vue 和 Vant 的 JS 文件 -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vant@2.12/lib/vant.min.js"></script>
-
-<script>
-  // 在 #app 标签下渲染一个按钮组件
-  new Vue({
-    el: '#app',
-    template: `<van-button>按钮</van-button>`,
-  });
-
-  // 调用函数组件，弹出一个 Toast
-  vant.Toast('提示');
-
-  // 通过 CDN 引入时不会自动注册 Lazyload 组件
-  // 可以通过下面的方式手动注册
-  Vue.use(vant.Lazyload);
-</script>
-```
-
-### 通过脚手架安装
-
-在新项目中使用 Vant 时，推荐使用 Vue 官方提供的脚手架 [Vue Cli](https://cli.vuejs.org/zh/) 创建项目并安装 Vant。
-
-```bash
-# 安装 Vue Cli
-npm install -g @vue/cli
-
-# 创建一个项目
-vue create hello-world
-
-# 创建完成后，可以通过命令打开图形化界面，如下图所示
-vue ui
-```
-
-![](https://img.yzcdn.cn/vant/vue-cli-demo-201809032000.png)
-
-在图形化界面中，点击 `依赖` -> `安装依赖`，然后将 `vant` 添加到依赖中即可。
-
-## 示例
-
-### 示例工程
-
-我们提供了丰富的[示例工程](https://github.com/youzan/vant-demo)，通过示例工程你可以了解如下内容：
-
-- 基于 Vue Cli 和 Vant 搭建应用
-- 基于 Nuxt 和 Vant 搭建应用
-- 配置按需引入组件
-- 配置基于 Rem 的适配方案
-- 配置基于 Viewport 的适配方案
-- 配置基于 TypeScript 的工程
-- 配置自定义主题色方案
 
 ## 引入组件
 
@@ -99,7 +33,7 @@ npm i babel-plugin-import -D
 {
   "plugins": [
     ["import", {
-      "libraryName": "vant",
+      "libraryName": "quick",
       "libraryDirectory": "es",
       "style": true
     }]
@@ -110,10 +44,10 @@ npm i babel-plugin-import -D
 module.exports = {
   plugins: [
     ['import', {
-      libraryName: 'vant',
+      libraryName: 'quick',
       libraryDirectory: 'es',
       style: true
-    }, 'vant']
+    }, 'quick']
   ]
 };
 ```
@@ -121,7 +55,7 @@ module.exports = {
 ```js
 // 接着你可以在代码中直接引入 Vant 组件
 // 插件会自动将代码转化为方式二中的按需引入形式
-import { Button } from 'vant';
+import { Button } from 'quick_vue';
 ```
 
 > Tips: 如果你在使用 TypeScript，可以使用 [ts-import-plugin](https://github.com/Brooooooklyn/ts-import-plugin) 实现按需引入。
@@ -131,8 +65,8 @@ import { Button } from 'vant';
 在不使用插件的情况下，可以手动引入需要的组件。
 
 ```js
-import Button from 'vant/lib/button';
-import 'vant/lib/button/style';
+import Button from 'quick_vue/lib/button';
+import 'quick_vue/lib/button/style';
 ```
 
 ### 方式三. 导入所有组件
@@ -141,10 +75,10 @@ Vant 支持一次性导入所有组件，引入所有组件会增加代码包体
 
 ```js
 import Vue from 'vue';
-import Vant from 'vant';
-import 'vant/lib/index.css';
+import Quick from 'quick_vue';
+import 'quick_vue/lib/index.css';
 
-Vue.use(Vant);
+Vue.use(Quick);
 ```
 
 > Tips: 配置按需引入后，将不允许直接导入所有组件。
@@ -156,19 +90,19 @@ Vue.use(Vant);
 在 HTML 中使用 Vant 组件时，你可能会碰到部分示例代码无法正确渲染的情况，比如下面的用法：
 
 ```html
-<van-cell-group>
-  <van-cell title="单元格" value="内容" />
-  <van-cell title="单元格" value="内容" />
-</van-cell-group>
+<quick-cell-group>
+  <quick-cell title="单元格" value="内容" />
+  <quick-cell title="单元格" value="内容" />
+</quick-cell-group>
 ```
 
 这是因为 HTML 并不支持自闭合的自定义元素，也就是说 `<van-cell />` 这样的语法是不被识别的，使用完整的闭合标签可以避免这个问题：
 
 ```html
-<van-cell-group>
-  <van-cell title="单元格" value="内容"></van-cell>
-  <van-cell title="单元格" value="内容"></van-cell>
-</van-cell-group>
+<quick-cell-group>
+  <quick-cell title="单元格" value="内容"></van-cell>
+  <quick-cell title="单元格" value="内容"></van-cell>
+</quick-cell-group>
 ```
 
 在单文件组件、字符串模板和 JSX 中可以使用自闭合的自定义元素，因此不会出现这个问题。

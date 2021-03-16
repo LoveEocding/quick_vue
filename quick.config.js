@@ -54,14 +54,14 @@ module.exports = {
                 path: 'quickstart',
                 title: '快速上手',
               },
-              {
-                path: 'advanced-usage',
-                title: '进阶用法',
-              },
-              {
-                path: 'changelog',
-                title: '更新日志',
-              },
+              // {
+              //   path: 'advanced-usage',
+              //   title: '进阶用法',
+              // },
+              // {
+              //   path: 'changelog',
+              //   title: '更新日志',
+              // },
             ],
           },
           {
@@ -110,30 +110,6 @@ module.exports = {
                 title: '左右翻页',
               },
             ],
-          },
-        ],
-      },
-      'en-US': {
-        title: 'quickact_vue',
-        description: 'Mobile UI Components built on Vue',
-        logo:
-          'https://habaocdn.fuhuibao.club/flb/common/1609203914529quickact_vue.png"',
-        langLabel: 'En',
-        links: [
-          {
-            logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/LoveEocding/QuickAct_Vue',
-          },
-        ],
-        searchConfig: {
-          apiKey: '90067aecdaa2c85220e2783cd305caac',
-          indexName: 'vant',
-          placeholder: 'Search...',
-        },
-        nav: [
-          {
-            title: 'Essentials',
-            items: [],
           },
         ],
       },
