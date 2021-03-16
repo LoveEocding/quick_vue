@@ -76,7 +76,7 @@ module.exports = {
                 title: '环形进度图',
               },
               {
-                path: 'wheel',
+                path: 'circle-assemble-chart',
                 title: '环形构成图',
               },
             ],
