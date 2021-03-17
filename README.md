@@ -7,7 +7,7 @@
 <p align="center">Quick Vue 是由**娃哈哈前端团队**开发维护，旨在快速开发日常交互活动</p>
 
 <p align="center">
-  🔥 <a href="http://hbtest.wahaha.com.cn/quick_vue">文档网站</a>
+  🔥 <a href="http://hbtest.wahaha.com.cn/quick_vue" target="_blank">文档网站</a>
 </p>
 
 ## Install
@@ -27,7 +27,7 @@ import 'quick_vue/lib/index.css';
 Vue.use(Wheel);
 ```
 
-See more in [Quickstart]().
+See more in [Quickstart](http://hbtest.wahaha.com.cn/quick_vue).
 
 ## Browser Support
 

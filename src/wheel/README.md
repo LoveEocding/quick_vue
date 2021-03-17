@@ -1,4 +1,4 @@
-# circle-wheel 环形图
+# circle-wheel 大转盘
 
 ### 介绍
 

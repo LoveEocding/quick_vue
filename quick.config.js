@@ -88,29 +88,21 @@ module.exports = {
                 path: 'wheel',
                 title: '大转盘',
               },
-              // {
-              //   path: 'wheel',
-              //   title: '老虎机',
-              // },
-              // {
-              //   path: 'wheel',
-              //   title: '弹幕滚动',
-              // },
             ],
           },
-          // {
-          //   title: '交互组件',
-          //   items: [
-          //     {
-          //       path: 'wheel',
-          //       title: '上下翻页',
-          //     },
-          //     {
-          //       path: 'wheel',
-          //       title: '左右翻页',
-          //     },
-          //   ],
-          // },
+          {
+            title: '工具',
+            items: [
+              {
+                path: 'keyboard-events',
+                title: '软盘监听',
+              },
+              {
+                path: 'pic-compress',
+                title: '图片压缩',
+              },
+            ],
+          },
         ],
       },
       'en-US': {},

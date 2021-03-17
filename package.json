@@ -67,7 +67,8 @@
     "@quick_vue/cli": "^1.0.1",
     "prettier": "2.1.0",
     "vue": "^2.6.12",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.12",
+    "img-compress-file":"^1.0.1"
   },
   "sideEffects": [
     "es/**/style/*",
