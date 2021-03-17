@@ -7,7 +7,7 @@
 <p align="center">Quick Vue 是由**娃哈哈前端团队**开发维护，旨在快速开发日常交互活动</p>
 
 <p align="center">
-  🔥 <a href="">文档网站</a>
+  🔥 <a href="http://hbtest.wahaha.com.cn/quick_vue">文档网站</a>
 </p>
 
 ## Install
@@ -21,10 +21,10 @@ npm i quick_vue -S
 
 ```js
 import Vue from 'vue';
-import { Tigger } from 'quick_vue';
+import { Wheel } from 'quick_vue';
 import 'quick_vue/lib/index.css';
 
-Vue.use(Tigger);
+Vue.use(Wheel);
 ```
 
 See more in [Quickstart]().
