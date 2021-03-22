@@ -1,7 +1,7 @@
 module.exports = {
   name: 'QuickAct_Vue',
   build: {
-    skipInstall: ['lazyload'],
+    skipInstall: ['lazyload', ''],
     site: {
       publicPath: process.env.PUBLIC_PATH || '',
     },
@@ -100,6 +100,15 @@ module.exports = {
               {
                 path: 'pic-compress',
                 title: '图片压缩',
+              },
+            ],
+          },
+          {
+            title: '展示组件',
+            items: [
+              {
+                path: 'count-down',
+                title: '倒计时',
               },
             ],
           },

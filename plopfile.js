@@ -21,10 +21,12 @@ module.exports = function (plop) {
       {
         type: 'add',
         path: 'src/{{name}}/README.md',
+        templateFile: './plop-templates/readme.hbs',
       },
       {
         type: 'add',
         path: 'src/{{name}}/README.zh-CN.md',
+        templateFile: './plop-templates/readme.hbs',
       },
       {
         type: 'add',
