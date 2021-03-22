@@ -2,7 +2,7 @@
 
 ### 介绍
 
-倒计时组件 颜色和字体大小继承父级
+倒计时组件 颜色和字体大小继承父级 支持自定义链接符号
 
 ### 引入
 
@@ -22,6 +22,7 @@ Vue.use(CountDown);
   <div class="test">
     <quick-count-down
       timeLong="588888"
+      linkSymbol=":"
       v-on:end="timeoutEnd"
     ></quick-count-down>
   </div>
@@ -46,9 +47,10 @@ export default {
 
 ### Props
 
-| 参数     | 说明       | 类型     | 默认值 |
-| -------- | ---------- | -------- | ------ |
-| timeLong | 剩余多少秒 | _number_ | 0      |
+| 参数       | 说明       | 类型     | 默认值 |
+| ---------- | ---------- | -------- | ------ |
+| timeLong   | 剩余多少秒 | _number_ | 0      |
+| linkSymbol | 链接符号   | _string_ | ':'    |
 
 ### events
 
