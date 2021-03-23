@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      timelong: 20,
+      timelong: 320,
     };
   },
   methods: {

@@ -1,6 +1,6 @@
 <template>
   <div class="time_out">
-    {{ `${hour}${linkSymbol}${minute}${linkSymbol}${senconds}` }}
+    {{ getText() }}
   </div>
 </template>
 
@@ -27,6 +27,9 @@ export default {
   },
   computed: {},
   watch: {
+    timeLong(val) {
+      this.localTime = val;
+    },
     localTime(val) {
       let longTime = val;
       const hour = Math.floor(longTime / 3600);
@@ -47,6 +50,14 @@ export default {
         this.$emit('end');
       }
     }, 1000);
+  },
+  methods: {
+    getText() {
+      if (this.hour < 24) {
+        return `${this.hour}${this.linkSymbol}${this.minute}${this.linkSymbol}${this.senconds}`;
+      }
+      return `${Math.floor(this.hour / 24)}天`;
+    },
   },
 };
 </script>
