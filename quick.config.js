@@ -91,7 +91,7 @@ module.exports = {
             ],
           },
           {
-            title: '工具',
+            title: 'npm插件',
             items: [
               {
                 path: 'keyboard-events',
@@ -100,6 +100,10 @@ module.exports = {
               {
                 path: 'pic-compress',
                 title: '图片压缩',
+              },
+              {
+                path: 'file-upload',
+                title: 'webpack插件/上传cdn',
               },
             ],
           },
