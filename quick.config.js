@@ -38,7 +38,7 @@ module.exports = {
         links: [
           {
             logo: 'https://b.yzcdn.cn/vant/logo/github.svg',
-            url: 'https://github.com/LoveEocding/QuickAct_Vue',
+            url: 'https://github.com/LoveEocding/quick_vue',
           },
         ],
         searchConfig: null,
